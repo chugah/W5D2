@@ -1,0 +1,281 @@
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2016-04-27 15:46:36 -0400
+Served asset /rails.png - 304 Not Modified (20ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (2.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (1.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateMovies (20160427194809)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "director" varchar(255), "runtime_in_minutes" integer, "description" text, "poster_image_url" varchar(255), "release_date" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20160427194809')[0m
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2016-04-27 16:26:23 -0400
+Served asset /rails.png - 304 Not Modified (1ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2016-04-27 16:26:26 -0400
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+  Rendered movies/index.html.erb within layouts/application (2.1ms)
+Warning. Error encountered while saving cache /Users/sbarghshoon/Desktop/mangoes/tmp/cache/sass/d804a1f5ed7f5a6eec23f12f6e3059330939a242/movies.css.scssc: can't dump anonymous class #<Class:0x00000103b14ca8>
+Compiled movies.css  (2ms)  (pid 2846)
+Compiled application.css  (7ms)  (pid 2846)
+Compiled jquery.js  (1ms)  (pid 2846)
+Compiled jquery_ujs.js  (0ms)  (pid 2846)
+Compiled movies.js  (75ms)  (pid 2846)
+Compiled application.js  (113ms)  (pid 2846)
+Completed 200 OK in 203ms (Views: 188.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2016-04-27 16:26:26 -0400
+Served asset /movies.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-04-27 16:26:26 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-27 16:26:26 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-27 16:26:26 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2016-04-27 16:26:26 -0400
+Served asset /movies.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-27 16:26:26 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/movies" for 127.0.0.1 at 2016-04-27 16:27:57 -0400
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+  Rendered movies/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 49ms (Views: 34.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-04-27 16:27:57 -0400
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2016-04-27 16:27:57 -0400
+Served asset /movies.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2016-04-27 16:27:57 -0400
+Served asset /movies.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-27 16:27:57 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-27 16:27:57 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-27 16:27:57 -0400
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2016-04-27 16:27:59 -0400
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (6.6ms)
+  Rendered movies/new.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 22ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-04-27 16:27:59 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-27 16:27:59 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2016-04-27 16:27:59 -0400
+Served asset /movies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2016-04-27 16:27:59 -0400
+Served asset /movies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-27 16:27:59 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-27 16:27:59 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2016-04-27 16:29:20 -0400
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (2.7ms)
+  Rendered movies/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 9ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-04-27 16:29:20 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2016-04-27 16:29:20 -0400
+Served asset /movies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-27 16:29:20 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-27 16:29:20 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2016-04-27 16:29:20 -0400
+Served asset /movies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-27 16:29:20 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2016-04-27 16:33:07 -0400
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (6.9ms)
+  Rendered movies/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 61ms (Views: 42.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-27 16:33:07 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2016-04-27 16:33:07 -0400
+Served asset /movies.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-04-27 16:33:07 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-27 16:33:07 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-27 16:33:07 -0400
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2016-04-27 16:33:07 -0400
+Served asset /movies.js - 304 Not Modified (1ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2016-04-27 16:33:11 -0400
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+  Rendered movies/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2016-04-27 16:33:11 -0400
+Served asset /movies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-27 16:33:11 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-27 16:33:11 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-27 16:33:11 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-04-27 16:33:11 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2016-04-27 16:33:11 -0400
+Served asset /movies.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2016-04-27 16:33:13 -0400
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (2.5ms)
+  Rendered movies/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 28ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-27 16:33:13 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-04-27 16:33:13 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2016-04-27 16:33:13 -0400
+Served asset /movies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-27 16:33:13 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2016-04-27 16:33:13 -0400
+Served asset /movies.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-27 16:33:13 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2016-04-27 16:34:00 -0400
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (3.5ms)
+  Rendered movies/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 12ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-04-27 16:34:00 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2016-04-27 16:34:00 -0400
+Served asset /movies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-04-27 16:34:00 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-04-27 16:34:00 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-04-27 16:34:00 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2016-04-27 16:34:00 -0400
+Served asset /movies.js - 304 Not Modified (0ms)
